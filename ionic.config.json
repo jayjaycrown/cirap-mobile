@@ -1,0 +1,7 @@
+{
+  "name": "CIRAP",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
