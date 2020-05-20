@@ -1,0 +1,19 @@
+ <ion-menu menuId="immigration-menu" contentId="immigration">
+   <ion-header>
+     <ion-toolbar class="tcontainer" color="danger">
+       <ion-title>
+         <img src="assets/img/cirap.png" width="200px" class="img-fluid rounded-circle" alt="">
+       </ion-title>
+     </ion-toolbar>
+   </ion-header>
+   <ion-content class="menubg" color="danger" padding>
+     <ion-list color="danger">
+       <ion-menu-toggle auto-hide="false" *ngFor="let p of pages">
+         <ion-item [routerLink]="p.url" routerDirection="root" [class.active-item]="selectedPath === p.url">
+           {{ p.title }}
+         </ion-item>
+       </ion-menu-toggle>
+     </ion-list>
+   </ion-content>
+ </ion-menu>
+ <ion-router-outlet id="immigration" main></ion-router-outlet>

@@ -12,7 +12,7 @@ const STORAGE_KEY = 'my_images';
   templateUrl: './report-personnel.page.html',
   styleUrls: ['./report-personnel.page.scss'],
 })
-@Injectable()
+
 // tslint:disable-next-line: component-class-suffix
 export class ReportPersonnelPage implements OnInit {
 

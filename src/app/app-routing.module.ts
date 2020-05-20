@@ -15,7 +15,26 @@ const routes: Routes = [
     path: 'policemenu',
     loadChildren: () => import('./police/policemenu/policemenu.module').then( m => m.PolicemenuPageModule)
   },
-
+  {
+    path: 'armymenu',
+    loadChildren: () => import('./army/army-menu/army-menu.module').then( m => m.ArmyMenuPageModule)
+  },
+  {
+    path: 'civildefense',
+    loadChildren: () => import('./civildefence/civildefense-menu/civildefense-menu.module').then( m => m.CivildefenseMenuPageModule)
+  },
+  {
+    path: 'frscmenu',
+    loadChildren: () => import('./frsc/frscmenu/frscmenu.module').then( m => m.FrscmenuPageModule)
+  },
+  {
+    path: 'immigrationmenu',
+    loadChildren: () => import('./immigration/immigrationmenu/immigrationmenu.module').then( m => m.ImmigrationmenuPageModule)
+  },
+  {
+    path: 'ndleamenu',
+    loadChildren: () => import('./ndlea/ndleamenu/ndleamenu.module').then( m => m.NdleamenuPageModule)
+  },
 ];
 
 @NgModule({
