@@ -1,0 +1,86 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Identify Personnel</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header color="danger">
+      <ion-card-title>Search for Personnel</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+        <ion-list-header>
+          <ion-label>
+            Search Parameter
+          </ion-label>
+        </ion-list-header>
+
+        <ion-item>
+          <ion-label>Search By: </ion-label>
+          <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+            <ion-select-option value="name">Name</ion-select-option>
+            <ion-select-option value="id">Identity No</ion-select-option>
+
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Search Parameter</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+
+        <ion-button expand="block" (click)="displayResult()" color="danger">Search</ion-button>
+
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngIf="showResult">
+    <ion-card-header color="danger">
+      <ion-card-title>Search Result</ion-card-title>
+    </ion-card-header>
+     <ion-card >
+       <img src="assets/img/marc.jpg" alt="">
+       <ion-card-header style="text-align: center;">
+         <ion-card-title>Lorem Ipsum Dolor</ion-card-title>
+         <ion-card-subtitle>123456-6787</ion-card-subtitle>
+       </ion-card-header>
+       <ion-card-content>
+         <ion-list>
+           <ion-item-divider>
+             <ion-label>
+               Rank
+             </ion-label>
+           </ion-item-divider>
+           <ion-item>
+             Sergent
+           </ion-item>
+           <ion-item-divider>
+             <ion-label>
+               State of Deployment
+             </ion-label>
+           </ion-item-divider>
+           <ion-item>
+             Lagos
+           </ion-item>
+           <ion-item-divider>
+             <ion-label>
+               Area Command
+             </ion-label>
+           </ion-item-divider>
+           <ion-item>
+             loremipsum
+           </ion-item>
+         </ion-list>
+
+       </ion-card-content>
+     </ion-card>
+  </ion-card>
+
+
+</ion-content>

@@ -11,6 +11,11 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'policemenu',
+    loadChildren: () => import('./police/policemenu/policemenu.module').then( m => m.PolicemenuPageModule)
+  },
+
 ];
 
 @NgModule({

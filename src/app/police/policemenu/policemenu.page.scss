@@ -1,0 +1,21 @@
+ion-item{
+  --background: var(--ion-color-primary);
+  --background-activated: var(--ion-color-danger);
+}
+ion-item.active-item {
+  border: 1px solid var(--ion-color-danger);
+  --background-activated: var(--ion-color-danger) !important;
+}
+
+.tcontainer{
+  padding: 0 30% !important;
+}
+.menubg{
+  background: #aca !important;
+}
+
+.list-md {
+
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
