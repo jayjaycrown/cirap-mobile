@@ -1,12 +1,49 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="danger">
     <ion-buttons slot="start">
       <ion-menu-button menu="main-menu"></ion-menu-button>
     </ion-buttons>
-    <ion-title>writeStatement</ion-title>
+    <ion-title>Write Statement</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Write your Statement</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+         <ion-item>
+           <ion-label position="floating">Enter Information</ion-label>
+           <ion-textarea></ion-textarea>
+         </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Station</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label>State: </ion-label>
+            <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+              <ion-select-option value="Abia">Abia</ion-select-option>
+              <ion-select-option value="Abuja">Abuja</ion-select-option>
+              <ion-select-option value="Lagos">Lagos</ion-select-option>
+            </ion-select>
+          </ion-item>
+          <ion-item>
+            <ion-label>LGA: </ion-label>
+            <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+              <ion-select-option value="name">Ikorodu</ion-select-option>
+              <ion-select-option value="id">Lekki</ion-select-option>
+
+            </ion-select>
+          </ion-item>
+      </ion-list>
+      <ion-button expand="full" color="danger">
+        Submit Report
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>
