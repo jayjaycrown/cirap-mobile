@@ -16,6 +16,10 @@ const routes: Routes = [
       {
         path: 'report-personnel',
         loadChildren: () => import('../report-personnel/report-personnel.module').then(m => m.ReportPersonnelPageModule)
+      },
+      {
+        path: 'report-flat',
+        loadChildren: () => import('../report-flat/report-flat.module').then(m => m.ReportFlatPageModule)
       }
     ]
   },

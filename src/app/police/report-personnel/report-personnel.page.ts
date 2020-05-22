@@ -4,6 +4,7 @@ import { File, FileEntry } from '@ionic-native/file/ngx';
 import { ActionSheetController, ToastController, Platform, LoadingController } from '@ionic/angular';
 import { WebView } from '@ionic-native/ionic-webview/ngx';
 import { Storage } from '@ionic/storage';
+import { Router } from '@angular/router';
 
 
 const STORAGE_KEY = 'my_images';
@@ -23,8 +24,11 @@ export class ReportPersonnelPage implements OnInit {
   constructor(private camera: Camera, private file: File, private storage: Storage, private webview: WebView,
               private actionSheetController: ActionSheetController, private plt: Platform,
               private toastController: ToastController, private loadingCtrl: LoadingController,
-              private ref: ChangeDetectorRef) { }
+              private ref: ChangeDetectorRef, private router: Router) { }
 
+  goHome() {
+    this.router.navigateByUrl('/home');
+  }
 
   displayResult() {
     this.showResult = true;
@@ -113,7 +117,7 @@ export class ReportPersonnelPage implements OnInit {
     return newFileName;
   }
 
-  copyFileToLocalDir(namePath: string, currentName: string, newFileName: string) {
+  copyFileToLocalDir(namePath, currentName, newFileName) {
     this.file.copyFile(namePath, currentName, this.file.dataDirectory, newFileName).then(
       success => {
         this.updateStoredImages(newFileName);

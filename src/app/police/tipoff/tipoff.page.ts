@@ -4,6 +4,7 @@ import { File, FileEntry } from '@ionic-native/file/ngx';
 import { ActionSheetController, ToastController, Platform, LoadingController } from '@ionic/angular';
 import { WebView } from '@ionic-native/ionic-webview/ngx';
 import { Storage } from '@ionic/storage';
+import { Router } from '@angular/router';
 
 const STORAGE_KEY = 'my_images';
 @Component({
@@ -19,7 +20,12 @@ export class TipoffPage implements OnInit {
   constructor(private camera: Camera, private file: File, private storage: Storage, private webview: WebView,
               private actionSheetController: ActionSheetController, private plt: Platform,
               private toastController: ToastController, private loadingCtrl: LoadingController,
-              private ref: ChangeDetectorRef) { }
+              private ref: ChangeDetectorRef, private router: Router) { }
+
+  goHome() {
+    this.router.navigateByUrl('/home');
+  }
+
   deleteImg(imgEntry, position) {
     this.images.splice(position, 1);
     this.storage.get(STORAGE_KEY).then(images => {

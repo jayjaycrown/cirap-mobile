@@ -1,18 +1,78 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content >
+  <div class="heading">
+    <!-- <div class="imghead">
+      <img src="assets/img/test.png">
+    </div> -->
+  </div>
 
-<ion-content [fullscreen]="true">
-<a routerLink="/policemenu/personnel-identification"> Police Menu</a> <br>
-<a routerLink="/armymenu/personnel-search"> Army Menu</a><br>
-<a routerLink="/frscmenu/personnel-search"> frsc Menu</a><br>
-<a routerLink="/immigrationmenu/personnel-search"> immigration Menu</a><br>
-<a routerLink="/ndleamenu/personnel-search"> ndlea Menu</a><br>
-<a routerLink="/civildefense/personnel-search"> Civil Defense Menu</a>
-
-
+  <div class="container">
+    <ion-grid>
+      <ion-row class="ion-align-items-center">
+        <ion-col class="ion-align-self-center">
+          <ion-card color="medium" routerLink="/policemenu/personnel-identification">
+            <div class="center">
+              <div class="avartar">
+                <ion-img src="assets/img/badge_police.png"></ion-img>
+              </div>
+              <h4>Police</h4>
+            </div>
+          </ion-card>
+        </ion-col>
+        <ion-col class="ion-align-self-center">
+          <ion-card color="danger" routerLink="/armymenu/personnel-search">
+            <div class="center">
+              <div class="avartar">
+                <ion-img src="assets/img/badge_army.png"></ion-img>
+              </div>
+              <h4>Army</h4>
+            </div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-card color="secondary" routerLink="/civildefense/personnel-search">
+            <div class="center">
+              <div class="avartar">
+                <ion-img src="assets/img/badge_civil.png"></ion-img>
+              </div>
+              <h5>Civil Defence</h5>
+            </div>
+          </ion-card >
+        </ion-col>
+        <ion-col>
+          <ion-card color="success" routerLink="/frscmenu/personnel-search">
+            <div class="center">
+              <div class="avartar">
+                <ion-img src="assets/img/badge_frsc.png"></ion-img>
+              </div>
+              <h4>FRSC</h4>
+            </div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-card color="light" routerLink="/ndleamenu/personnel-search">
+            <div class="center">
+              <div class="avartar">
+                <ion-img src="assets/img/badge_ndlea.png"></ion-img>
+              </div>
+              <h4>NDLEA</h4>
+            </div>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card color="tertiary" routerLink="/immigrationmenu/personnel-search">
+            <div class="center">
+              <div class="avartar">
+                <ion-img src="assets/img/badge_immigration.png"></ion-img>
+              </div>
+              <h4>NIS</h4>
+            </div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
 </ion-content>

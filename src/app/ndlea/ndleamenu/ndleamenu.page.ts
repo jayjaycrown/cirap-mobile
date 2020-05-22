@@ -10,12 +10,19 @@ import { Router, RouterEvent } from '@angular/router';
 export class NdleamenuPage implements OnInit {
   pages = [
     {
-      title: 'Personnel Identification',
-      url: '/ndleamenu/personnel-search'
+      title: 'Search Personnel',
+      url: '/ndleamenu/personnel-search',
+      icon: 'search'
     },
     {
       title: 'Report Personnel',
-      url: '/ndleamenu/report-personnel'
+      url: '/ndleamenu/report-personnel',
+      icon: 'person'
+    },
+    {
+      title: 'Report Flat',
+      url: '/ndleamenu/report-flat',
+      icon: 'home'
     }
   ];
 

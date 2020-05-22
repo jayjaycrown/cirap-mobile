@@ -10,12 +10,19 @@ import { Router, RouterEvent } from '@angular/router';
 export class ImmigrationmenuPage implements OnInit {
   pages = [
     {
-      title: 'Personnel Identification',
-      url: '/immigrationmenu/personnel-search'
+      title: 'Search Personnel',
+      url: '/immigrationmenu/personnel-search',
+      icon: 'search'
     },
     {
       title: 'Report Personnel',
-      url: '/immigrationmenu/report-personnel'
+      url: '/immigrationmenu/report-personnel',
+      icon: 'person'
+    },
+    {
+      title: 'Report Flat',
+      url: '/immigrationmenu/report-flat',
+      icon: 'home'
     }
   ];
 

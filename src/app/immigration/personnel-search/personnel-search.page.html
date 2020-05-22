@@ -1,7 +1,12 @@
 <ion-header>
-  <ion-toolbar color="danger">
+  <ion-toolbar color="tertiary">
     <ion-buttons slot="start">
       <ion-menu-button menu="immigration-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button (click)="goHome()">
+        <ion-icon slot="icon-only" ios="home" md="home"></ion-icon>
+      </ion-button>
     </ion-buttons>
     <ion-title>Personnel Search</ion-title>
   </ion-toolbar>
@@ -9,7 +14,7 @@
 
 <ion-content padding>
   <ion-card>
-    <ion-card-header color="danger">
+    <ion-card-header color="tertiary">
       <ion-card-title>Search for Personnel</ion-card-title>
     </ion-card-header>
 
@@ -35,17 +40,17 @@
           <ion-input></ion-input>
         </ion-item>
 
-        <ion-button expand="block" (click)="displayResult()" color="danger">Search</ion-button>
+        <ion-button expand="full" (click)="displayResult()" color="tertiary">Search</ion-button>
 
       </ion-list>
     </ion-card-content>
   </ion-card>
   <ion-card *ngIf="showResult">
-    <ion-card-header color="danger">
+    <ion-card-header color="tertiary">
       <ion-card-title>Search Result</ion-card-title>
     </ion-card-header>
     <ion-card>
-      <img src="assets/img/marc.jpg" alt="">
+      <img src="assets/img/immigration.jpeg" alt="">
       <ion-card-header style="text-align: center;">
         <ion-card-title>Lorem Ipsum Dolor</ion-card-title>
         <ion-card-subtitle>123456-6787</ion-card-subtitle>

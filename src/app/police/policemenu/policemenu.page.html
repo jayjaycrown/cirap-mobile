@@ -1,16 +1,23 @@
  <ion-menu menuId="main-menu" contentId="police" >
    <ion-header>
-     <ion-toolbar class="tcontainer" color="danger">
+     <ion-toolbar class="tcontainer" color="dark">
        <ion-title>
-         <img src="assets/img/cirap.png" width="200px" class="img-fluid rounded-circle" alt="">
+         <div style="text-align: center !important; margin-bottom: 5vh !important;">
+           <div class="toolheader">
+             <ion-img src="assets/img/badge_police.png"></ion-img>
+           </div>
+           <h4>Nigerian Police</h4>
+         </div>
+
        </ion-title>
      </ion-toolbar>
    </ion-header>
-   <ion-content class="menubg" color="primary">
+   <ion-content color="medium">
      <ion-list color="primary">
        <ion-menu-toggle auto-hide="false" *ngFor="let p of pages">
-         <ion-item [routerLink]="p.url" routerDirection="root" [class.active-item]="selectedPath === p.url">
-           {{ p.title }}
+         <ion-item [routerLink]="p.url" routerDirection="root" [class.active-item]="selectedPath === p.url" detail>
+          <ion-icon slot="start" name="{{p.icon}}" color="dark"></ion-icon>
+          <ion-label>{{ p.title }}</ion-label>
          </ion-item>
        </ion-menu-toggle>
      </ion-list>

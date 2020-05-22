@@ -33,6 +33,14 @@ const routes: Routes = [
         path: 'wanted-list',
         loadChildren: () => import('../wanted-list/wanted-list.module').then(m => m.WantedListPageModule)
       },
+      {
+        path: 'missing-persons',
+        loadChildren: () => import('../missing-persons/missing-persons.module').then(m => m.MissingPersonsPageModule)
+      },
+      {
+        path: 'report-flat',
+        loadChildren: () => import('../report-flat/report-flat.module').then(m => m.ReportFlatPageModule)
+      },
     ]
   },
   {

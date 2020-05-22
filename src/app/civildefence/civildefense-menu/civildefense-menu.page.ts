@@ -11,12 +11,19 @@ export class CivildefenseMenuPage implements OnInit {
 
   pages = [
     {
-      title: 'Personnel Identification',
-      url: '/civildefense/personnel-search'
+      title: 'Search Personnel',
+      url: '/civildefense/personnel-search',
+      icon: 'search'
     },
     {
       title: 'Report Personnel',
-      url: '/civildefense/report-personnel'
+      url: '/civildefense/report-personnel',
+      icon: 'person'
+    },
+    {
+      title: 'Report Flat',
+      url: '/civildefense/report-flat',
+      icon: 'home'
     }
   ];
   selectedPath = '';

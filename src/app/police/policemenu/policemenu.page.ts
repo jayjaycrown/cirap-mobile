@@ -10,28 +10,44 @@ import { Router, RouterEvent } from '@angular/router';
 export class PolicemenuPage implements OnInit {
   pages = [
     {
-      title: 'Personnel Identification',
-      url: '/policemenu/personnel-identification'
+      title: 'Search Personnel',
+      url: '/policemenu/personnel-identification',
+      icon: 'home'
     },
     {
       title: 'Report Personnel',
-      url: '/policemenu/report-personnel'
+      url: '/policemenu/report-personnel',
+      icon: 'home'
+    },
+    {
+      title: 'Report Flat',
+      url: '/policemenu/report-flat',
+      icon: 'home'
     },
     {
       title: 'Send a Tipoff',
-      url: '/policemenu/tipoff'
+      url: '/policemenu/tipoff',
+      icon: 'home'
     },
     {
       title: 'Report A Crime',
-      url: '/policemenu/crime-report'
+      url: '/policemenu/crime-report',
+      icon: 'home'
     },
     {
       title: 'Write Statement',
-      url: '/policemenu/write-statement'
+      url: '/policemenu/write-statement',
+      icon: 'home'
     },
     {
       title: 'Wanted List',
-      url: '/policemenu/wanted-list'
+      url: '/policemenu/wanted-list',
+      icon: 'home'
+    },
+    {
+      title: 'Missing Persons',
+      url: '/policemenu/missing-persons',
+      icon: 'home'
     },
   ];
 

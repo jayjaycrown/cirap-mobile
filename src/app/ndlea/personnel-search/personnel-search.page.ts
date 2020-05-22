@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-personnel-search',
@@ -8,10 +9,14 @@ import { Component, OnInit } from '@angular/core';
 // tslint:disable-next-line: component-class-suffix
 export class PersonnelSearchPage implements OnInit {
   showResult = false;
-  constructor() { }
+  constructor(private router: Router) { }
 
   displayResult() {
     this.showResult = true;
+  }
+
+  goHome() {
+    this.router.navigateByUrl('/home');
   }
 
   ngOnInit() {

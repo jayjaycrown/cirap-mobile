@@ -10,12 +10,19 @@ import { Router, RouterEvent } from '@angular/router';
 export class FrscmenuPage implements OnInit {
   pages = [
     {
-      title: 'Personnel Identification',
-      url: '/frscmenu/personnel-search'
+      title: 'Search Personnel',
+      url: '/frscmenu/personnel-search',
+      icon: 'search'
     },
     {
       title: 'Report Personnel',
-      url: '/frscmenu/report-personnel'
+      url: '/frscmenu/report-personnel',
+      icon: 'person'
+    },
+    {
+      title: 'Report Flat',
+      url: '/frscmenu/report-flat',
+      icon: 'home'
     }
   ];
 

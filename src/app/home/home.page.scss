@@ -1,27 +1,41 @@
-#container {
+ion-content {
+ --background: #ecf1f4;
+}
+
+ion-card{
+  margin: 8px !important;
+}
+.heading {
+
+  width: 100% !important;
+  height: 35% !important;
+  background: url('../../assets/img/cirap6.png')45% 20%/130% 110%;
+  background-color:#000d27 !important;
+  padding-top: 22px;
+
+}
+.avartar{
+  overflow: hidden;
+  border-radius: 50%;
+  width: 80px !important;
+  height: 80px !important;
+  // border: 1px solid #000;
+  margin: 0 auto;
+}
+
+.center{
+  display: grid;
   text-align: center;
+  align-items: center;
+  align-content: center;
+  padding: 10px 0px 0px 0;
+}
 
-  position: absolute;
+.container {
+  position: relative;
+  top: -10%;
   left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+ion-col {
+  --ion-grid-column-padding: 0 !important;
 }

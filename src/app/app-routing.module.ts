@@ -35,6 +35,9 @@ const routes: Routes = [
     path: 'ndleamenu',
     loadChildren: () => import('./ndlea/ndleamenu/ndleamenu.module').then( m => m.NdleamenuPageModule)
   },
+
+
+
 ];
 
 @NgModule({

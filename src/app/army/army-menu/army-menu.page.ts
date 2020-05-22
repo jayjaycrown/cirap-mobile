@@ -10,12 +10,19 @@ import { Router, RouterEvent } from '@angular/router';
 export class ArmyMenuPage implements OnInit {
   pages = [
     {
-      title: 'Personnel Identification',
-      url: '/armymenu/personnel-search'
+      title: 'Search Personnel',
+      url: '/armymenu/personnel-search',
+      icon: 'search'
     },
     {
       title: 'Report Personnel',
-      url: '/armymenu/report-personnel'
+      url: '/armymenu/report-personnel',
+      icon: 'person'
+    },
+    {
+      title: 'Report Flat',
+      url: '/armymenu/report-flat',
+      icon: 'home'
     }
   ];
 

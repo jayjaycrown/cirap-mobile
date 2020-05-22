@@ -1,7 +1,12 @@
 <ion-header>
-  <ion-toolbar color="danger">
+  <ion-toolbar color="dark">
     <ion-buttons slot="start">
       <ion-menu-button menu="ndlea-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button (click)="goHome()">
+        <ion-icon slot="icon-only" ios="home" md="home"></ion-icon>
+      </ion-button>
     </ion-buttons>
     <ion-title>Report Personnel</ion-title>
   </ion-toolbar>
@@ -9,7 +14,7 @@
 
 <ion-content padding>
   <ion-card>
-    <ion-card-header color="danger">
+    <ion-card-header color="dark">
       <ion-card-title>Search for Personnel</ion-card-title>
     </ion-card-header>
 
@@ -35,11 +40,11 @@
           <ion-input></ion-input>
         </ion-item>
 
-        <ion-button expand="block" (click)="displayResult()" color="danger">Search</ion-button>
+        <ion-button expand="block" (click)="displayResult()" color="dark">Search</ion-button>
 
       </ion-list>
       <div *ngIf="!search">
-        <ion-button expand="full" color="danger" (click)="changeSearch()">Search for a personnel</ion-button>
+        <ion-button expand="full" color="dark" (click)="changeSearch()">Search for a personnel</ion-button>
       </div>
 
     </ion-card-content>
@@ -47,7 +52,7 @@
 
 
   <ion-card *ngIf="showResult">
-    <ion-card-header color="danger">
+    <ion-card-header color="dark">
       <ion-card-title>Search Result</ion-card-title>
     </ion-card-header>
     <ion-card>
@@ -78,14 +83,14 @@
           </ion-item>
 
         </ion-list>
-        <ion-button color="danger" expand="block" (click)="reportPersonnel()">Report Personnel</ion-button>
+        <ion-button color="dark" expand="block" (click)="reportPersonnel()">Report Personnel</ion-button>
 
       </ion-card-content>
     </ion-card>
   </ion-card>
 
   <ion-card *ngIf="enterReport">
-    <ion-card-header color='danger'>
+    <ion-card-header color='dark'>
       <ion-card-title>File your report</ion-card-title>
       <ion-card-subtitle>All fields are important</ion-card-subtitle>
     </ion-card-header>
@@ -99,7 +104,7 @@
       <ion-item-divider>
         Upload proof(s)
       </ion-item-divider>
-      <ion-button fill="clear" expand="full" color="danger" (click)="selectImage()">
+      <ion-button fill="clear" expand="full" color="dark" (click)="selectImage()">
         <ion-icon name="camera" slot="start"></ion-icon>
         Select Image
       </ion-button>
@@ -116,7 +121,7 @@
           </ion-col>
         </ion-row>
       </ion-grid>
-      <ion-button expand="full" color="danger">
+      <ion-button expand="full" color="dark">
         Submit Report
       </ion-button>
     </ion-card-content>
